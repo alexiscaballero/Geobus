@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.proyecto.geobus">
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".NewTodoActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity
+            android:name=".PrincipalActivity"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDEgv8Ooi03hwoGb1rIDqxdsXAy4kGffF0" />
+
+        <activity android:name=".FirstMapActivity" />
+        <activity android:name=".menuActivities.RecorridosActivity" />
+        <activity
+            android:name=".menuActivities.ColectivosActivity"
+            android:label="@string/title_activity_colectivos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".menuActivities.NuevoColectivoActivity"></activity>
+        <activity
+            android:name=".menuActivities.ChoferesActivity"
+            android:label="@string/title_activity_choferes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".menuActivities.NuevoChoferActivity"></activity>
+        <activity
+            android:name=".menuActivities.TurnosActivity"
+            android:label="@string/title_activity_turnos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".menuActivities.NuevoTurnoActivity"></activity>
+    </application>
+
+</manifest>

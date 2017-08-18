@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mapa"
+            android:icon="@drawable/streetview_black_54x54"
+            android:title="Mapa" />
+        <item
+            android:id="@+id/nav_recorridos"
+            android:icon="@drawable/timeline_black_54x54"
+            android:title="Recorridos" />
+        <item
+            android:id="@+id/nav_turnos"
+            android:icon="@drawable/settings_black_54x54"
+            android:title="Turnos" />
+        <item
+            android:id="@+id/nav_choferes"
+            android:icon="@drawable/account_box_black_54x54"
+            android:title="Choferes" />
+        <item
+            android:id="@+id/nav_colectivos"
+            android:icon="@drawable/directions_bus_black_54x54"
+            android:title="Colectivos" />
+    </group>
+
+    <item android:title="Otros">
+        <menu>
+            <item
+                android:id="@+id/nav_opciones"
+                android:icon="@drawable/settings_black_54x54"
+                android:title="Opciones" />
+            <item
+                android:id="@+id/nav_cerrar_sesion"
+                android:icon="@drawable/common_full_open_on_phone"
+                android:title="Cerrar Sesión" />
+        </menu>
+    </item>
+
+</menu>
